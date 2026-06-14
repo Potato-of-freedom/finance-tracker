@@ -117,7 +117,7 @@ body{font-family:-apple-system,'Segoe UI',sans-serif;background:#0f0f1a;color:#e
 <div class="app">
   <!-- HOME -->
   <div class="view on" id="vHome">
-    <div class="page-title">Budget Tracker</div>
+    <div class="page-title">Budget Tracker V1</div>
     <div id="streakBox" class="streak" style="display:none"></div>
     <div class="dash">
       <div class="card c1"><div class="ic">💰</div><div class="lb">Income</div><div class="am" id="tInc">$0</div></div>
@@ -193,7 +193,7 @@ body{font-family:-apple-system,'Segoe UI',sans-serif;background:#0f0f1a;color:#e
 <script>
 const PRESETS={
   income:['Salary','Freelance','Refund','Gift','Bonus','Other'],
-  expense:['Food','Coffee','Transport','Shopping','Bills','Rent','Entertainment','Health','Other'],
+  expense:['Food','Beverages','Transport','Shopping','Bills','Rent','Entertainment','Health','Other'],
   saving:['Emergency','Vacation','Investment','Goal Fund','Other']
 };
 let txs=JSON.parse(localStorage.getItem('btx')||'[]'),goal=JSON.parse(localStorage.getItem('bgoal')||'0'),txType='income',picked=null,currentTab=0;
